@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"Neil Adamasson",
+        "review":"Some of the best customer service i have experienced in an industry where it is not usually associated, along with very knowledgeable staff who gave me clear information of what was required for car to pass MOT and then provided me the quote.Works came in on price and on time, would recommend Lakeside to anyone who are feeling let down by their own garage.Lakeside is a family owned independent garage who genuinly wants to look after its customers hoping they will return, I certainly will.",
+        "car":"Windsor – Mercedes"
+    },
+    {
+        "id":2,
+        "name":"Daniel George",
+        "review":"I shopped around for a good garage for my Mazda Bongo. I got a few quotes that were completely unreasonable. Cutting to the chase, garage was recommended with high praise and justifiably so. Excellent service from the front line to the man who repaired my Bongo. Would use them every time in future without hesitation.",
+        "car":"Mazda Bongo"
+    },
+    {
+        "id":3,
+        "name":"Steve little",
+        "review":"We had been using main dealers for years and got fed up of poor service, shoddy workmanship and extortionate bills. So we decided to try our local garage and never looked back. The team at Lakeside are highly skilled, highly professional, honest and charge reasonable prices – what higher recommendation can there be? We have now been using them for 8 years with 3 of our cars and have total faith and confidence in what they do. We and have recommended them to all our friends, who now mirror our thoughts.",
+        "car":"Range Rover - Wraysbury"
+    },
+    {
+        "id":4,
+        "name":"Mathew Wheeler",
+        "review":"The service and customer care we received was second to none. The reception team where friendly and polite, also very honest and only recommended work required, at no time did they try to force us to have unnecessary jobs carried out. Lastly the vehicle was ready for collection at the time they said it would be. You must be the only reliable honest garage for miles. Thank you.",
+        "car":"Polo- Feltham"
+    }
+]

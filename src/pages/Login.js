@@ -30,8 +30,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
   },
   submit: {
-    margin: theme.spacing(3, 0, 2),
+    marginTop:theme.spacing(1),
+    marginBottom:theme.spacing(2)
   },
+  guest :{
+    marginTop: theme.spacing(3),
+    marginBottom:theme.spacing(0)
+  }
 }));
 
 export default function Login() {
@@ -53,6 +58,11 @@ export default function Login() {
     const handlePasswordChange=(e)=>{
         setPassword(e.target.value)
     }
+    const handleGuest=()=>{
+          setEmail('guestuser123@gmail.com')
+          setPassword('guestuser123')
+    }
+
 
     const handleSubmit=async(e)=>{
         e.preventDefault()
@@ -91,64 +101,84 @@ export default function Login() {
 
   return (
     <React.Fragment>
-    <Container component="main" maxWidth="xs">
-      <CssBaseline />
-      <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar>
-        <Typography component="h1" variant="h5">
-          Login
-        </Typography>
-        <form className={classes.form} noValidate onSubmit={handleSubmit}>
-          <Grid container spacing={2}>
-            
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="semail"
-                label="Email Address"
-                name="email"
-                autoComplete="off"
-                onChange={handleEmailChange}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="spassword"
-                autoComplete="off"
-                onChange={handlePasswordChange}
-              />
-            </Grid>
-          </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
+      <Container component="main" maxWidth="xs">
+        <CssBaseline />
+        <div className={classes.paper}>
+          <Avatar className={classes.avatar}>
+            <LockOutlinedIcon />
+          </Avatar>
+          <Typography component="h1" variant="h5">
             Login
-          </Button>
-          <Grid container justify="flex-end">
-            <Grid item>
-              <Link href="/register" variant="body2">
-                Don't have an account? Sign up
-              </Link>
+          </Typography>
+          <form className={classes.form} noValidate onSubmit={handleSubmit}>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  variant="outlined"
+                  required
+                  fullWidth
+                  id="semail"
+                  label="Email Address"
+                  name="email"
+                  autoComplete="off"
+                  onChange={handleEmailChange}
+                  value={email}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  variant="outlined"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  type="password"
+                  id="spassword"
+                  autoComplete="off"
+                  onChange={handlePasswordChange}
+                  value={password}
+                />
+              </Grid>
             </Grid>
-          </Grid>
-        </form>
-      </div>
-    </Container>
-    {error && <Snackbar anchorOrigin={{vertical:'top',horizontal:'center'}} open={open} autoHideDuration={3000} onClose={()=>setOpen(false)}><Alert severity='error'>{error}</Alert></Snackbar>}
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.guest}
+            >
+              Login
+            </Button>
+            <Button
+              type="button"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+              onClick={handleGuest}
+            >
+             Guest Credentials
+            </Button>
+            <Grid container justify="flex-end">
+              <Grid item>
+                <Link href="/register" variant="body2">
+                  Don't have an account? Sign up
+                </Link>
+              </Grid>
+            </Grid>
+          </form>
+        </div>
+      </Container>
+      {error && (
+        <Snackbar
+          anchorOrigin={{ vertical: "top", horizontal: "center" }}
+          open={open}
+          autoHideDuration={3000}
+          onClose={() => setOpen(false)}
+        >
+          <Alert severity="error">{error}</Alert>
+        </Snackbar>
+      )}
     </React.Fragment>
   );
 }

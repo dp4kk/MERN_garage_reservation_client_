@@ -50,10 +50,10 @@ const Navbar = () => {
             <BuildIcon/>
             </Button>
             <div className={classes.title}/>
-            {user ?
+            {user.accessToken ?
             (<Button color='inherit' variant="outlined" onClick={handleLogout}>logout</Button>)
             :(<Button color='inherit' variant='outlined' onClick={()=>history.push('/login')}>login</Button>)
-            }
+            }   
           </Toolbar>
         </AppBar>
       </div>

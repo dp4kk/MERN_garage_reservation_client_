@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import slides from '../images.json'
+import Reviews from "../components/Reviews";
 export const Home = () => {
 
   
@@ -13,6 +14,7 @@ export const Home = () => {
           </div>
         ))}
       </Carousel>
+      <Reviews/>
     </div>
   );
 };
