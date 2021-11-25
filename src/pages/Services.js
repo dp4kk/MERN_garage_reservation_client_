@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     listStyleType: "none",
   },
   paper: {
-    width: 700,
+    width: 600,
     justifyContent: "center",
   },
   list: {

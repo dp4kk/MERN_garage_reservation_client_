@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: theme.spacing(3),
+    
 
   },
   errorText:{
@@ -25,9 +25,6 @@ const useStyles = makeStyles((theme) => ({
   },
   paper:{
     width:600,
-    // justifyContent:'center',
-    // alignItems:'center',
-    // display:'flex',
     marginBottom:theme.spacing(3),
     paddingBottom:theme.spacing(3),
     paddingLeft:theme.spacing(3)
@@ -87,11 +84,11 @@ const validate=(values)=>{
 
 
 const FormicForm = () => {
-  const { serviceItems, removeService } = useContext(AppContext);
+  const { serviceItems, removeService , name } = useContext(AppContext);
 
   
 
-  const nameServiceItems = serviceItems.map((item) => {
+  let nameServiceItems = serviceItems.map((item) => {
     return item.name;
   });
   //notification
@@ -137,6 +134,7 @@ const FormicForm = () => {
       timing: "",
       date: new Date(),
       services: nameServiceItems,
+      userName: name,
     },
     validate,
     onSubmit: (values, { resetForm }) => {
@@ -153,7 +151,7 @@ const FormicForm = () => {
     setOpenNotification(false)
   }
   return (
-    
+    <React.Fragment>
     <div className={classes.root}>
       <Paper className={classes.paper} elevation={3}>
         <form onSubmit={formik.handleSubmit} id="formik-form" method="POST">
@@ -306,6 +304,7 @@ const FormicForm = () => {
             variant="contained"
             color="primary"
             onClick={handleDialogOpen}
+            disabled={!serviceItems.length}
           >
             Book Slot
           </Button>
@@ -338,6 +337,7 @@ const FormicForm = () => {
       </Paper>
       <Snackbar anchorOrigin={{vertical:'top',horizontal:'center'}} open={openNotification} autoHideDuration={5000} onClose={handleNotificationClose}><Alert severity='success'>Slot booked successfully!! You will be contacted shortly.</Alert></Snackbar>
     </div>
+    </React.Fragment>
   );
 };
 

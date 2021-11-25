@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useContext, useState} from "react";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -12,7 +12,7 @@ import Container from "@material-ui/core/Container";
 import { Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import {useHistory} from 'react-router-dom'
-
+import { AppContext } from "../contexts/DataContext";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -37,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Register() {
   const history=useHistory()
   const classes = useStyles();
+
+  const {setName}=useContext(AppContext)
         const [userName,setUserName]=useState('')
         const [email,setEmail]=useState('')
         const [password,setPassword]=useState('')
@@ -70,6 +72,7 @@ export default function Register() {
             }),
           })
         ).json();
+        await setName(userName);
         console.log(result)
         if(!result.error){
             console.log(result.message)
@@ -109,6 +112,7 @@ export default function Register() {
                   name="userName"
                   autoComplete="off"
                   onChange={handleUserChange}
+                  value={userName}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -121,6 +125,7 @@ export default function Register() {
                   name="email"
                   autoComplete="off"
                   onChange={handleEmailChange}
+                  value={email}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -134,6 +139,7 @@ export default function Register() {
                   id="rpassword"
                   autoComplete="off"
                   onChange={handlePasswordChange}
+                  value={password}
                 />
               </Grid>
             </Grid>

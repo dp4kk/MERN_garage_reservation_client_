@@ -27,6 +27,7 @@ const DataContext = ({children}) => {
     const classes=useStyles()
   //user state
   const [user, setUser] = useState("");
+  const [name,setName]=useState('')
     const [loading,setLoading]=useState(true)
   //drawer
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -71,7 +72,7 @@ const DataContext = ({children}) => {
           },
         })
       ).json();
-
+          console.log(result)
       setUser({
         accessToken: result.accesstoken,
       });
@@ -92,6 +93,8 @@ const DataContext = ({children}) => {
     slot,
     user,
     setUser,
+    name,
+    setName,
     ...state,
   };
   if(loading) return (<div className={classes.root}><CircularProgress color='primary'/></div>)

@@ -11,6 +11,8 @@ import Login from "./pages/Login";
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Footer from "./components/Footer";
 import {PrivateRoute} from './contexts/PrivateRoute'
+import Booking from "./pages/Booking";
+import ServiceName from "./pages/ServiceName";
 function App() {
   return (
     <React.Fragment>
@@ -23,8 +25,9 @@ function App() {
               <Navbar />
               <Sidebar />
               <Route exact path="/" component={Home} />
-              <Route path="/services" component={Services} />
+              <Route path="/services" component={ServiceName} />
               <PrivateRoute path="/bookservice" component={FormicForm} />
+              <PrivateRoute path='/booking' component={Booking}/>
             </React.Fragment>
           </Switch>
           <Footer />

@@ -71,6 +71,7 @@ export default function Login() {
           await fetch("https://garage-reservation.herokuapp.com/login", {
             method: "POST",
             credentials: "include",
+            withCredentials:true,
             headers: {
               "Content-Type": "application/json",
             },

@@ -9,18 +9,24 @@
         "id":2,
         "name":"Daniel George",
         "review":"I shopped around for a good garage for my Mazda Bongo. I got a few quotes that were completely unreasonable. Cutting to the chase, garage was recommended with high praise and justifiably so. Excellent service from the front line to the man who repaired my Bongo. Would use them every time in future without hesitation.",
-        "car":"Mazda Bongo"
+        "car":"Mazda- Bongo"
     },
     {
         "id":3,
         "name":"Steve little",
-        "review":"We had been using main dealers for years and got fed up of poor service, shoddy workmanship and extortionate bills. So we decided to try our local garage and never looked back. The team at Lakeside are highly skilled, highly professional, honest and charge reasonable prices – what higher recommendation can there be? We have now been using them for 8 years with 3 of our cars and have total faith and confidence in what they do. We and have recommended them to all our friends, who now mirror our thoughts.",
+        "review":"We had been using main dealers for years and got fed up of poor service, shoddy workmanship and extortionate bills. So we decided to try our local garage and never looked back. The team at Lakeside are highly skilled, highly professional, honest and charge reasonable prices – what higher recommendation can there be? We have now been using them for 8 years with 3 of our cars and have total faith and confidence in what they do. We and have recommended them to all our friends, who now mirror thoughts.",
         "car":"Range Rover - Wraysbury"
     },
     {
         "id":4,
         "name":"Mathew Wheeler",
-        "review":"The service and customer care we received was second to none. The reception team where friendly and polite, also very honest and only recommended work required, at no time did they try to force us to have unnecessary jobs carried out. Lastly the vehicle was ready for collection at the time they said it would be. You must be the only reliable honest garage for miles. Thank you.",
+        "review":"The service and customer care we received was second to none. The reception team where friendly and polite, also very honest and only recommended work required, at no time did they try to force us to have unnecessary jobs carried out. Lastly the vehicle was for collection at the time they said it would be. You must be the only reliable honest garage for miles. Thank you.",
         "car":"Polo- Feltham"
+    },
+    {
+        "id":5,
+        "name":"Johnson Miles",
+        "review":"I took my Vehicle in for an ABS/traction issue that had been bothering me for months. (Mechanic Name) was straight forward on cost and quality of the parts that he used. There’s nothing more important than honesty and integrity in the auto service industry and mechanic owned it. It was a pleasure doing business and getting to know him!",
+        "car":"Toyota- corolla"
     }
 ]

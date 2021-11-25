@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Car Servicing",
+    "detail": "A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has traveled a certain distance. The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next service electronically on the instrument panel. A tune-up should not be confused with engine tuning, which is the modifying of an engine to perform better than the original specification, rather than using maintenance to keep the engine running as it should."
+  },
+  {
+    "id": 2,
+    "name": "Battery Repairs",
+    "detail": "Excess heat is a main cause of battery failures, as when the electrolyte evaporates due to high   temperatures, decreasing the effective surface area of the plates exposed to the electrolyte, and leading to sulfation. Grid corrosion rates increase with temperature. Also low temperatures can lead to battery failur If the battery is discharged to the point where it can't start the engine, the engine can be jump started via an external source of power. Once running, the engine can recharge the battery, if the alternator and charging system are undamaged"
+  },{
+        "id":3,
+        "name":"Brake Fluid Replacement",
+        "detail":"Excess use of Brakes over time can cause depletion in the level of Brake Fluid that can become dangerous.Needs to be replaced every few months or after certain distance."
+    },{
+        "id":4,
+        "name":"Clutch Replacement",
+        "detail":"A clutch kit is a group of manual transmission parts that are either purchased as a unit or assembled piecemeal. ... While other parts, like the release bearing and pressure plate, may not wear out at the same speed, they may be replaced anyway since removing a transmission is often labor intensive."
+    },{
+        "id":5,
+        "name":"Coolant Change",
+        "detail":"This involves removing dirt, rust, and sludge from your cooling system, as well as inspecting various parts for symptoms of decline. This process also empties out all of the used coolant material from your radiator and replaces it with fresh coolant, effectively servicing your engine's cooling system."
+    },{
+        "id":6,
+        "name":"Diagnostic Check",
+        "detail":"A car diagnostic test is a digital analysis of your car's various computer systems and components. ... Car diagnostic tests scan your car's components and systems to check for issues with components like the engine, transmission, oil tank, throttle, and many more."
+    },{
+        "id":7,
+        "name":"Radiator Repairs",
+        "detail":"The biggest things with radiators are internal corrosion and leaks, damaged fins and a clogged radiator,” says Jason. Radiator damage can take on many forms, though the two most obvious issues are corrosion and bent fins.Needs to be repaired ASAP"
+    },{
+        "id":8,
+        "name":"Oil Change",
+        "detail":"An Oil Change is the act of removing the used oil in your engine and replacing it with new, clean oil. Over time, oil breaks down and gets dirty."
+    },{
+        "id":9,
+        "name":"Wheel balancing",
+        "detail":"Wheel balancing is the process of balancing the weight of a tire and wheel assembly so that it travels evenly at high speeds. Balancing requires putting a mounted wheel and tire on a balancer, which centers the wheel and spins it to determine where the weights should go. Every time a wheel is first mounted onto a vehicle with a new tire, it has to be balanced. "
+    },{
+        "id":10,
+        "name":"Shock Absorber Repairs",
+        "detail":"In their simplest form, shock absorbers are hydraulic (oil) pump like devices that help to control the impact and rebound movement of your vehicle's springs and suspension. Along with smoothening out bumps and vibrations, the key role of the shock absorber is to ensure that the vehicle’s tyres remain in contact with the road surface at all times, which ensures the safest control and braking response from your car."
+    }
+
+]

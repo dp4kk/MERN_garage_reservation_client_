@@ -9,9 +9,16 @@ import reviews from '../reviews.json'
      },
      quotation:{
          display:'inline-block',
-         margin:'0 5px'
+         margin:'0 5px',
+         fontSize:'16px'
+         
+     },
+     carditem:{
+        minWidth: 275,
+        border:'2px solid',
+        padding:'10px',
+        boxShadow: '5px 10px grey'
      }
-
  })) 
 
 const Reviews = () => {
@@ -25,10 +32,10 @@ const Reviews = () => {
             <Grid container spacing={2} >
                 {reviews.map(review=>{
                        return(
-                           <Grid item xs='auto' key={review.id}>
-                            <Card variant='outlined'>
+                           <Grid item xs='auto' md={4}  key={review.id}>
+                            <Card variant='outlined' className={classes.carditem}>
                                 <CardContent>
-                                    <Typography variant='body2' color='textSecondary'>{quoteUp}{review.review}{quoteDown}</Typography>
+                                    <Typography variant='body2' color='textSecondary'>{quoteUp} {review.review} {quoteDown}</Typography>
                                     <Typography variant='subtitle1'>{review.name}</Typography>
                                     <Typography variant='subtitle2' color='textSecondary'>{review.car}</Typography>
                                 </CardContent>

@@ -11,8 +11,8 @@ import {
 import React, { useContext } from "react";
 import { AppContext } from "../contexts/DataContext";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import BuildIcon from "@material-ui/icons/Build";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import HistoryIcon from "@material-ui/icons/History";
 import { useHistory } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -37,16 +37,17 @@ const Sidebar = () => {
 
   const Itemlist = [
     {
-      text: "Services",
-      icon: <BuildIcon />,
+      text:"Services",
+      icon:<HistoryIcon/>,
       onClick: () => history.push("/services"),
     },
-    {
+    { 
       text: "Book Appointment",
       icon: <ShoppingCartIcon />,
-      // onClick: () => history.push("/bookservice"),
-      onClick: () => history.push("/bookservice"),
+      onClick: () => history.push("/booking"),
     },
+   
+   
   ];
   return (
     <div>
